@@ -37,6 +37,29 @@ This is a simple shell program for Windows that allows users to execute basic sh
 2. Type commands and press `Enter` to execute.
 3. Use `exit` to terminate the shell.
 
+### Example
+```
+PS C:\Users\User\Projects\simple-shell> .\shell.exe
+Welcome to The Simple Shell
+simple-shell>> unknowncmd
+'unknowncmd' is not recognized as an internal or external command,
+operable program or batch file.
+simple-shell>> cd newfolder
+cd: No such file or directory
+simple-shell>> mkdir newfolder
+simple-shell>> cd newfolder
+simple-shell>> dir
+simple-shell>> echo Hello, World! > greeting.txt
+simple-shell>> del greeting.txt
+simple-shell>> dir
+simple-shell>> pwd
+C:\Users\User\Projects\simple-shell\newfolder
+simple-shell>> cd ..
+simple-shell>> pwd
+C:\Users\User\Projects\simple-shell
+simple-shell>> exit
+```
+
 ## File Structure
 - `main.c`: Entry point of the program.
 - `shell.c`: Handles the main shell loop and user input.
